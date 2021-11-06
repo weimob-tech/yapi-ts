@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "yapi-ts",
+  "version": "1.0.0",
+  "description": "通过yapi服务为前端开发者生成有类型提示的请求代码",
+	"icons": {
+		"16": "yapi.png",
+		"48": "yapi.png",
+		"128": "yapi.png"
+	},
+  "action": 
+	{
+		"default_icon": "yapi.png",
+		"default_popup": "popup/popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["./content_scripts/content.js"]
+		}
+	],
+
+	"permissions":
+	[
+	],
+  "host_permissions": [
+    "http://localhost/*"
+  ]
+}

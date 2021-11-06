@@ -1,0 +1,24 @@
+{
+  "name": "yapi-ts",
+  "version": "1.0.0",
+  "description": "自动生成前端请求层代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keys": [
+    "yapi",
+    "ts",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "fs-extra": "7.0.1",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "koa2-cors": "^2.0.6",
+    "yapi-to-typescript": "^3.26.0"
+  }
+}

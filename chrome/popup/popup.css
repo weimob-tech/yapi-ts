@@ -1,0 +1,97 @@
+body{
+  min-width: 50px;
+  min-height: 50px;
+}
+.button{
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Assistant', sans-serif;
+}
+
+
+.button {
+  min-width: 100px;
+  height: 50px;
+  background: transparent;
+  will-change: transform;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: 2px solid #FF5126;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  color: #FF5126;
+  outline: none;
+  text-align: center;
+}
+.button:hover {
+  background: #FF5126;
+  color: #ffffff;
+}
+.button:active {
+  font-size: 15px;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+.button.active {
+  font-size: 0;
+  border-radius: 25px;
+  min-width: 50px;
+  width: 50px;
+  background: transparent;
+}
+.button.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 2px solid #ffffff;
+  -webkit-animation: loader .4s linear infinite;
+          animation: loader .4s linear infinite;
+}
+.button.success {
+  background: #3BB873;
+  border-color: #3BB873;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
