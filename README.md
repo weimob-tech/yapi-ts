@@ -47,25 +47,7 @@
       "@/*": ["src/*"],
     },
     "target": "ES6",
-    "module": "{
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/vue_app/*"],
-      "CoPackageProcessEdit/*": ["src/vue_app/views/mcp/cockpit/CoPackageProcessEdit/*"],
-      "ACoPackageProcessEdit/*": ["src/vue_app/views/mcp/ACoPackageProcessEdit/*"]
-    },
-    "target": "ES6",
     "module": "ES2015",
-    "allowSyntheticDefaultImports": true
-  },
-  "include": [
-    "./src/vue_app/**/*",
-    "./src/react_app/**/*"
-  ],
-  "exclude": ["node_modules"]
-}
-",
     "allowSyntheticDefaultImports": true
   },
   "include": [
