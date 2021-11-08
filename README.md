@@ -33,6 +33,11 @@
 
 ### vscode自动引入代码
 1. 在项目根目录创建jsconfig.json（配置后, vscode默认插件能够自动import）
+
+![](https://image-c.weimobwmc.com/static-resource/a880f1a8525d40cca4076497c24c0ac8.jpg)
+
+![](https://image-c.weimobwmc.com/static-resource/2a5c9524cb894b5180d5ae998bf0f596.jpg)
+
   ``` json
 {
   "compilerOptions": {
@@ -41,7 +46,25 @@
       "@/*": ["src/*"],
     },
     "target": "ES6",
-    "module": "commonJS",
+    "module": "{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/vue_app/*"],
+      "CoPackageProcessEdit/*": ["src/vue_app/views/mcp/cockpit/CoPackageProcessEdit/*"],
+      "ACoPackageProcessEdit/*": ["src/vue_app/views/mcp/ACoPackageProcessEdit/*"]
+    },
+    "target": "ES6",
+    "module": "ES2015",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./src/vue_app/**/*",
+    "./src/react_app/**/*"
+  ],
+  "exclude": ["node_modules"]
+}
+",
     "allowSyntheticDefaultImports": true
   },
   "include": [
