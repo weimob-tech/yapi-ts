@@ -1,0 +1,44 @@
+dependencies:
+  '@types/lodash-es': registry.npm.taobao.org/@types/lodash-es/4.17.3
+  lodash: registry.npm.taobao.org/lodash/4.17.20
+  lodash-es: registry.npm.taobao.org/lodash-es/4.17.15
+lockfileVersion: 5.1
+packages:
+  registry.npm.taobao.org/@types/lodash-es/4.17.3:
+    dependencies:
+      '@types/lodash': registry.npm.taobao.org/@types/lodash/4.14.161
+    dev: false
+    name: '@types/lodash-es'
+    resolution:
+      integrity: sha1-h+sLNnOwdrjuZV8YkCYKE2rwmi0=
+      registry: 'https://r.npm.taobao.org/'
+      tarball: 'https://registry.npm.taobao.org/@types/lodash-es/download/@types/lodash-es-4.17.3.tgz'
+    version: 4.17.3
+  registry.npm.taobao.org/@types/lodash/4.14.161:
+    dev: false
+    name: '@types/lodash'
+    resolution:
+      integrity: sha1-ohygd32rxuT0Tz0H83t2X1QYixg=
+      registry: 'https://r.npm.taobao.org/'
+      tarball: 'https://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.161.tgz'
+    version: 4.14.161
+  registry.npm.taobao.org/lodash-es/4.17.15:
+    dev: false
+    name: lodash-es
+    resolution:
+      integrity: sha1-Ib2Wg5NUQS8j16EDQOXqxu5FXXg=
+      registry: 'https://r.npm.taobao.org/'
+      tarball: 'https://registry.npm.taobao.org/lodash-es/download/lodash-es-4.17.15.tgz'
+    version: 4.17.15
+  registry.npm.taobao.org/lodash/4.17.20:
+    dev: false
+    name: lodash
+    resolution:
+      integrity: sha1-tEqbYpe8tpjxxRo1RaKzs2jVnFI=
+      registry: 'https://r.npm.taobao.org/'
+      tarball: 'https://registry.npm.taobao.org/lodash/download/lodash-4.17.20.tgz'
+    version: 4.17.20
+specifiers:
+  '@types/lodash-es': ^4.17.3
+  lodash: ^4.17.20
+  lodash-es: ^4.17.15
