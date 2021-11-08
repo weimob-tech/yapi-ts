@@ -6,7 +6,7 @@
 
 ![](https://image-c.weimobwmc.com/static-resource/5aefd2b8a9ed45a0b1b0f5710483ba42.gif)
 
-![](https://image-c.weimobwmc.com/static-resource/474a20c0027c4c3d85187488ca054c48.jpg)
+![](https://image-c.weimobwmc.com/static-resource/04c28cfe7d704d2895091bfe22b36a07.jpg)
 
 ### 使用方式
 * npx yapi-ts --s src/api
@@ -25,11 +25,12 @@
 ### 安装chrome插件
 1. 浏览器打开（[chrome扩展程序 chrome://extensions/](chrome://extensions/)）
 2. 打开开发者模式
-  ![](https://image-c.weimobwmc.com/static-resource/39bac812cad94de88212023f01473504.jpg)
-1. 下载[yapi ts chrome插件.zip](https://c.weimobwmc.com/static-resource/dcd672cadfd94f319759433f14574109.zip), 将zip解压
+  ![](https://image-c.weimobwmc.com/static-resource/f2a6196d383e4ab1af50a0276ab22d32.jpg)
+1. 下载[yapi ts chrome插件.zip](https://c.weimobwmc.com/static-resource/dcd672cadfd94f319759433f14574109.zip), 解压出文件夹
 2. 将文件夹拖入chrome扩展程序页面
-  ![](https://image-c.weimobwmc.com/static-resource/70cf10a789734f0daf93846e1513cd30.jpg)
-  
+  ![](https://image-c.weimobwmc.com/static-resource/642bfd1f9377405d86b017c8c2925e94.jpg)
+3. 安装完成
+  ![](https://image-c.weimobwmc.com/static-resource/9fb96eac41214b2ba61bbf14e22aa642.png)
 
 ### vscode自动引入代码
 1. 在项目根目录创建jsconfig.json（配置后, vscode默认插件能够自动import）
