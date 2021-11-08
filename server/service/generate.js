@@ -53,17 +53,31 @@ async function generate({ token, catId, origin } = {}) {
   generator.config[0].projects[0].token = token
   generator.config[0].projects[0].categories[0].id = Number(catId)
   requestFunctionFilePath = requestFunctionFilePath.replace(".ts", ".js")
-  let requestCode
+  let requestCodeTemplate = `// TODO: 此文件由yapi-ts生成, 可以随意修改
+  import service from "axios"
+  
+  export default function request(payload, options) {
+    return service({
+      mockUrl: payload.mockUrl,
+      url: payload.path,
+      method: payload.method,
+      data: payload.method === "POST" ? payload.data : {},
+      params: payload.method === "GET" ? payload.data : {},
+    })
+  }
+  `
+  let oriRrequestCode
   try {
-    requestCode = fs.readFileSync(requestFunctionFilePath).toString()
+    oriRrequestCode = fs.readFileSync(requestFunctionFilePath).toString()
+    console.log(`检测到已经存在${requestFunctionFilePath}, 将使用其作为公共请求函数`)
+    console.log(`请参考默认 ${requestFunctionFilePath} 模版：`)
+    console.log(requestCodeTemplate)
   } catch (e) {
     console.log(`读取不到${requestFunctionFilePath}, 将生成新的文件`)
   }
   const output = await generator.generate()
   await generator.write(output)
-  if (requestCode) {
-    fs.outputFileSync(requestFunctionFilePath, requestCode)
-  }
+  fs.outputFileSync(requestFunctionFilePath, oriRrequestCode || requestCodeTemplate)
 }
 
 module.exports = {
