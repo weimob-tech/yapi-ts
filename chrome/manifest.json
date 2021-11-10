@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "yapi-ts",
   "version": "1.0.0",
-  "description": "通过yapi服务为前端开发者生成有类型提示的请求代码",
+  "description": "通过yapi生成js和ts代码",
 	"icons": {
 		"16": "yapi.png",
 		"48": "yapi.png",
