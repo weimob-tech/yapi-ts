@@ -10,6 +10,7 @@
     "api",
     "yapi"
   ],
+  "homepage": "https://github.com/zhangHongEn/yapi-ts",
   "main": "index.js",
   "bin": {
     "yapi-ts": "server/app.js"
