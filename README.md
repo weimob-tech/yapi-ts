@@ -37,6 +37,9 @@
 5. 安装完成
   ![](https://image-c.weimobwmc.com/static-resource/9fb96eac41214b2ba61bbf14e22aa642.png)
 
+### 解决chrome94访问localhost跨域
+1. https://zhuanlan.zhihu.com/p/414533145
+
 ### vscode自动引入代码
 1. 在项目根目录创建jsconfig.json（配置后, vscode默认插件能够自动import）
 
