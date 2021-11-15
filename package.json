@@ -10,7 +10,7 @@
     "api",
     "yapi"
   ],
-  "homepage": "https://github.com/zhangHongEn/yapi-ts",
+  "homepage": "https://github.com/weimob-tech/yapi-ts",
   "main": "index.js",
   "bin": {
     "yapi-ts": "server/app.js"
