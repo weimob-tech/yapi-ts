@@ -9,6 +9,7 @@
 ![](https://image-c.weimobwmc.com/static-resource/04c28cfe7d704d2895091bfe22b36a07.jpg)
 
 ### 使用方式
+// --dataKey 使用respoonse中的哪个key生成的ts文件, 不传默认使用整个response作为ts声明
 * yarn add yapi-ts
 * npx yapi-ts --s src/api --dataKey ""
 * 安装[chrome商店yapi-ts插件（翻墙）](https://chrome.google.com/webstore/detail/yapi-ts/nojjmcbnjafgcfhfmopkdjgbmmaeadmm) 或者 [yapi-ts chrome插件.zip](https://c.weimobwmc.com/static-resource/dcd672cadfd94f319759433f14574109.zip)
