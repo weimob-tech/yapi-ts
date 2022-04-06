@@ -1,6 +1,6 @@
 {
   "name": "yapi-ts",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "为前端项目生成请求代码",
   "keywords": [
     "ts",
