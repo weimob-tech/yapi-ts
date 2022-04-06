@@ -8,11 +8,13 @@ const args = arg({
 	'--help': Boolean,
 	'--version': Boolean,
   '--src': String,
+  '--dataKey': String,
 
 	// Aliases
 	'--s': '--src',
 });
 const srcPath = args["--src"] || "src/api"
+const dataKey = args["--dataKey"] || ""
 
 const generator = new Generator(defineConfig([
   {
@@ -25,7 +27,7 @@ const generator = new Generator(defineConfig([
     prodEnvName: "production",
     outputFilePath: (interfaceInfo) => `${srcPath}/${interfaceInfo.query_path.path.replace(/\/[^/]*$/, "").replace(/^\//, "")}.ts`,
     requestFunctionFilePath: `${srcPath}/request.ts`,
-    dataKey: "data",
+    dataKey,
     projects: [
       {
         token: "",
