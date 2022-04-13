@@ -60,8 +60,7 @@ async function generate({ token, catId, origin } = {}) {
   
   export default function request(payload, options) {
     return service({
-      mockUrl: payload.mockUrl,
-      url: payload.path,
+      url: options.mock ? payload.mockUrl + payload.path : payload.path,
       method: payload.method,
       data: payload.method === "POST" ? payload.data : {},
       params: payload.method === "GET" ? payload.data : {},
